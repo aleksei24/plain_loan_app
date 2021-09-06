@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Xperiment</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Loan calculator</h1>
+            <form action="#">
+                <label for="amount">
+                    Amount of the Loan ($)
+                    <input type="text" name="amount" id="amount" />
+                </label>
+                <label for="annual">
+                    Annual interest (%)
+                    <input type="text" name="annual" id="annual" />
+                </label>
+                <label for="repayment">
+                    Repayment Period (year)
+                    <input type="text" name="repayment" id="repayment" />
+                </label>
+                <label for="approximate">
+                    Approximate Payments
+                    <button type="submit" id="calculate">Calculate</button>
+                </label>
+            </form>
+            <section class="output">
+                <p class="output__text" id="month">
+                    monthly payment
+                    <span>$ 0</span>
+                </p>
+                <p class="output__text" id="totalPayment">
+                    total payment
+                    <span>$ 0</span>
+                </p>
+                <p class="output__text" id="totalInterest">
+                    total interest
+                    <span>$ 0</span>
+                </p>
+            </section>
+        </div>
+    </body>
+</html>
