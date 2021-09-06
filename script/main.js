@@ -9,6 +9,8 @@ function calculateResult() {
     const interest = document.querySelector('#interest').value;
     const payment = document.querySelector('#payment').value;
 
+    console.log(amount, interest, payment);
+
     // calculate
     const principal = parseFloat(amount);
     const calcInterest = parseFloat(interest) / 100 / 12;
